@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Network Newspaper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=EB+Garamond:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'EB Garamond', serif;
+            background-color: white;
+            color: #402f2f;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .newspaper-container {
+            max-width: 1800px;
+            margin: 0 auto;
+            background-color: #fdfaf2;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .heading {
+            text-align: center;
+            border-bottom: 3px double #402f2f;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            font-size: 2.6rem;
+        }
+        
+        .sub-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #402f2f;
+            padding: 5px 0;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 25px;
+        }
+
+        article {
+            margin-bottom: 25px;
+        }
+
+        article h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.6rem;
+            margin: 0 0 5px 0;
+            line-height: 1.1;
+            color: #332626;
+        }
+
+        article h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin: 0 0 5px 0;
+            line-height: 1.1;
+            border-bottom: 1px solid #dcd3b2;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        article p {
+            text-align: justify;
+            text-indent: 1.5em;
+            line-height: 1.6;
+            margin: 0 0 1em 0;
+        }
+
+        article p:first-of-type {
+            text-indent: 0;
+        }
+
+        article p:first-of-type::first-letter {
+            font-size: 4em;
+            font-weight: bold;
+            float: left;
+            line-height: 0.8;
+            margin-right: 8px;
+            margin-top: 5px;
+            color: #332626;
+        }
+
+        .placeholder-image {
+            background-color: #eaddc2;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-style: italic;
+            color: #8c7f6c;
+            margin: 15px 0;
+            border: 1px solid #dcd3b2;
+            
+        }
+
+        .page-footer {
+            border-top: 2px solid #402f2f;
+            margin-top: 30px;
+            padding-top: 20px;
+        }
+
+        .audio {
+            background-color: #eaddc2;
+            border: 1px solid #dcd3b2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .audio h4 {
+            font-family: 'Playfair Display', serif;
+            margin: 0 0 10px 0;
+            color: #332626;
+            font-size: 1.5rem;
+        }
+
+        audio {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="newspaper-container">
+        <header>
+            <div class="heading">
+                <h1>Network and Servers</h1>
+            </div>
+            <div class="sub-header">
+                <span>Thursday, July 15, 2025</span>
+            </div>
+        </header>
+
+        <main class="content-grid">
+            <section class="dongle-collaboration">
+                <article>
+                    <h2>Understanding Wi-Fi USB Dongles </h2>
+                    <p>
+                        A <i>Wi-Fi USB</i> dongle is a device that can be used to provide internet connectivity to a computer
+                        or even a compatible router. Some routers are equipped with a USB port that can accept a 3G or
+                        4G dongle, allowing it to use the cellular network as its internet source. This feature
+                        creates a versatile internet setup where the router can failover to the dongle's cellular
+                        connection if the primary wired internet (like ADSL or cable) goes down. This allows
+                        multiple devices, such as laptops and smartphones, to share the dongle's internet connection
+                        over Wi-Fi.
+                    </p>
+                    <div class="placeholder-image"><img src="assets/dongle.png" alt=""></div>
+                    <p>
+                        However, it's important to note that not all routers with a USB port support this function; many
+                        are designed only for connecting printers or external hard drives. Therefore, when
+                        purchasing a router intended for use with a dongle, you must check the product specifications
+                        for terms like "3G router" or "USB dongle support" to ensure compatibility with your specific
+                        dongle and service provider, such as Tata Photon or Reliance Netconnect. Configuration
+                        typically involves connecting the dongle to the router, accessing the router's web-based setup
+                        page, and entering the settings for your specific internet service provider. 
+                    </p>
+                </article>
+                <article>
+                    <h3>Description of the common functionality of server networks</h3>
+                    <div class="placeholder-image"><img src="assets/server.png" alt=""></div>
+                    <p>
+                        A server is a powerful computer providing data and services to clients. They are fundamental for
+                        file sharing, application hosting, and managing network security. They act as the gatekeepers,
+                        authenticating users and deploying firewalls to protect the network from external threats.
+                    </p>
+                </article>
+            </section>
+
+            <section class="servers">
+                <article>
+                    <h3> Types and functions of networking and wireless connection </h3>
+                    <p>
+                        Modern networking encompasses various methods for connecting devices locally and to the wider
+                        internet, each serving different needs. A Local Area Network (LAN) connects devices within a
+                        limited area, such as a home or office. Connection to a LAN can be achieved wirelessly using
+                        Wi-Fi, which allows devices like laptops, phones, and game consoles to connect without cables.
+                        Alternatively, an Ethernet cable provides a wired LAN connection, often delivering a
+                        faster and more reliable signal because it is not susceptible to interference that can affect
+                        Wi-Fi. Ethernet cables come in different categories, like Cat5e, Cat6, and Cat7, which
+                        support progressively higher speeds.
+                        A Wide Area Network (WAN), on the other hand, spans a large geographical area and is what we
+                        commonly refer to as the internet. Devices can connect to a WAN through several means. A mobile
+                        hotspot, created using a smartphone, allows other devices to share its cellular data connection
+                        via Wi-Fi. For a more stable setup, a router can be physically connected to the phone
+                        to manage the hotspot, providing a better connection without draining the phone's battery.
+                        Another method is using a USB dongle, which provides cellular internet directly to a
+                        single computer or a compatible router. As cloud computing becomes more prevalent, the
+                        distinction between LAN and WAN is blurring, with technologies evolving to create a more
+                        seamless, unified network architecture where the physical location of data is less important.
+                        
+                    </p>
+                </article>
+            </section>
+
+            <section class="collaboration">
+                <article>
+                    <h3>Secure collaborations across the internet</h3>
+                    <p>
+                        Secure collaboration across the internet relies on robust systems for verifying user identities
+                        and controlling access to shared resources. Authentication is the foundational process of
+                        confirming that a person or device is who they claim to be, much like a border guard verifies a
+                        traveler's passport. In a network environment, this is often handled by technologies
+                        like Active Directory, which manages user credentials such as passwords and cryptographic keys.
+                        This centralized approach prevents unauthorized access and forms the basis of trust
+                        within a network. This trust can be transitive, meaning if Domain A trusts Domain B, and Domain
+                        B trusts Domain C, then Domain A will also trust Domain C, creating a secure web of
+                        relationships essential for network security. 
+                        To simplify the user experience without compromising security, Single Sign-On (SSO) is widely
+                        used. SSO is an identification method that allows a user to log in once with a single set of
+                        credentials and gain access to multiple applications and websites without needing to re-enter
+                        their password for each service. This works through a trusted Identity Provider (IdP)
+                        that authenticates the user and issues a digital authentication token. This token,
+                        often formatted using standards like Security Assertion Markup Language (SAML), is then
+                        presented to various service providers (like websites or apps) to grant access. This
+                        not only enhances productivity but also improves security by encouraging the use of stronger,
+                        unique passwords and reducing the risks associated with password fatigue and shadow IT. 
+                        Ultimately, protecting your personal data—including usernames, passwords, and financial
+                        information—from theft is crucial for safe online collaboration. 
+                    </p>
+                    <p>
+                        Understanding these distinctions is crucial for designing and troubleshooting network
+                        infrastructures, from a simple home setup to a complex corporate environment spanning multiple
+                        continents.
+                    </p>
+                </article>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <div class="audio">
+                <h4>Audio Version</h4>
+                <p>Listen to the full report with this audio version.</p>
+                <audio controls>
+                    <source src="networks-and-servers.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

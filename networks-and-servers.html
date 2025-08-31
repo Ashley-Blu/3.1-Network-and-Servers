@@ -20,10 +20,13 @@
         }
 
         .newspaper-container {
-            max-width: 1800px;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
             margin: 0 auto;
             background-color: #fdfaf2;
-            padding: 30px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
@@ -34,7 +37,7 @@
             margin-bottom: 10px;
             font-size: 2.6rem;
         }
-        
+
         .sub-header {
             display: flex;
             justify-content: space-between;
@@ -105,7 +108,7 @@
             color: #8c7f6c;
             margin: 15px 0;
             border: 1px solid #dcd3b2;
-            
+
         }
 
         .page-footer {
@@ -133,6 +136,102 @@
             max-width: 400px;
             margin-top: 10px;
         }
+
+        @media (max-width: 599px) {
+            .newspaper-container {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .content-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                grid-template-columns: none;
+            }
+
+            img{
+                width: 200px;
+            }
+
+            article h2 {
+                font-size: 1.8rem;
+            }
+
+            article h3 {
+                font-size: 1.3rem;
+            }
+        }
+
+        /* Medium devices (tablets, 600px to 899px) */
+        @media (min-width: 600px) and (max-width: 899px) {
+            .newspaper-container {
+                font-size: 16px;
+                padding: 20px;
+            }
+
+            img{
+                width: 200px;
+            }
+
+            .content-grid {
+                display: grid;
+                grid-template-columns: 1.5fr 1fr;
+                gap: 20px;
+            }
+
+            article h2 {
+                font-size: 2rem;
+            }
+
+            article h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Large devices (desktops, 900px to 1279px) */
+        @media (min-width: 900px) and (max-width: 1279px) {
+            .newspaper-container {
+                max-width: 1200px;
+                padding: 25px;
+                font-size: 18px;
+            }
+
+            .content-grid {
+                grid-template-columns: 2fr 1fr 1fr;
+                gap: 25px;
+            }
+
+            article h2 {
+                font-size: 2.4rem;
+            }
+
+            article h3 {
+                font-size: 1.6rem;
+            }
+        }
+
+        /* Extra large devices (large desktops, 1280px and above) */
+        @media (min-width: 1280px) {
+            .newspaper-container {
+                max-width: 1800px;
+                padding: 30px;
+                font-size: 20px;
+            }
+
+            .content-grid {
+                grid-template-columns: 2fr 1fr 1fr;
+                gap: 30px;
+            }
+
+            article h2 {
+                font-size: 2.6rem;
+            }
+
+            article h3 {
+                font-size: 1.8rem;
+            }
+        }
     </style>
 </head>
 
@@ -152,7 +251,8 @@
                 <article>
                     <h2>Understanding Wi-Fi USB Dongles </h2>
                     <p>
-                        A <i>Wi-Fi USB</i> dongle is a device that can be used to provide internet connectivity to a computer
+                        A <i>Wi-Fi USB</i> dongle is a device that can be used to provide internet connectivity to a
+                        computer
                         or even a compatible router. Some routers are equipped with a USB port that can accept a 3G or
                         4G dongle, allowing it to use the cellular network as its internet source. This feature
                         creates a versatile internet setup where the router can failover to the dongle's cellular
@@ -168,7 +268,7 @@
                         for terms like "3G router" or "USB dongle support" to ensure compatibility with your specific
                         dongle and service provider, such as Tata Photon or Reliance Netconnect. Configuration
                         typically involves connecting the dongle to the router, accessing the router's web-based setup
-                        page, and entering the settings for your specific internet service provider. 
+                        page, and entering the settings for your specific internet service provider.
                     </p>
                 </article>
                 <article>
@@ -203,7 +303,7 @@
                         single computer or a compatible router. As cloud computing becomes more prevalent, the
                         distinction between LAN and WAN is blurring, with technologies evolving to create a more
                         seamless, unified network architecture where the physical location of data is less important.
-                        
+
                     </p>
                 </article>
             </section>
@@ -220,7 +320,7 @@
                         This centralized approach prevents unauthorized access and forms the basis of trust
                         within a network. This trust can be transitive, meaning if Domain A trusts Domain B, and Domain
                         B trusts Domain C, then Domain A will also trust Domain C, creating a secure web of
-                        relationships essential for network security. 
+                        relationships essential for network security.
                         To simplify the user experience without compromising security, Single Sign-On (SSO) is widely
                         used. SSO is an identification method that allows a user to log in once with a single set of
                         credentials and gain access to multiple applications and websites without needing to re-enter
@@ -229,9 +329,9 @@
                         often formatted using standards like Security Assertion Markup Language (SAML), is then
                         presented to various service providers (like websites or apps) to grant access. This
                         not only enhances productivity but also improves security by encouraging the use of stronger,
-                        unique passwords and reducing the risks associated with password fatigue and shadow IT. 
+                        unique passwords and reducing the risks associated with password fatigue and shadow IT.
                         Ultimately, protecting your personal data—including usernames, passwords, and financial
-                        information—from theft is crucial for safe online collaboration. 
+                        information—from theft is crucial for safe online collaboration.
                     </p>
                     <p>
                         Understanding these distinctions is crucial for designing and troubleshooting network
